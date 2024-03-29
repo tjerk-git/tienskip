@@ -15,5 +15,7 @@ $(document).ready(function () {
   //     logo.classList.remove("logo_small");
   //   }
   // }
+
+
 });
 
