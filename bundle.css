@@ -259,10 +259,10 @@ swiper-container {
 
 .purple-backdrop {
   background: var(--purple);
-  height: 100vh;
+  height: 135vh;
   width: 100%;
   position: absolute;
-  top: 60%;
+  top: 45%;
   z-index: -1;
 }
 
@@ -868,6 +868,18 @@ footer {
 }
 
 .question_form{
+  padding:2rem;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  margin: 0 auto;
+  background:white;
+  width:100%;
+  transition: height 0.5s;
+  display:none;
+}
+
+.work_form{
   padding:2rem;
   display:flex;
   flex-direction:column;

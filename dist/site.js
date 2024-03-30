@@ -4,6 +4,8 @@ let $ = jQuery.noConflict();
 
 $(document).ready(function () {
 
+  $('.work_form').slideDown(500);
+
   $('.contact_block').on('click', function () {
 
     // get the data attribute of this element
@@ -15,6 +17,14 @@ $(document).ready(function () {
         $('.question_form').slideUp(500);
       } else {
         $('.question_form').slideDown(500);
+      }
+    }
+
+    if (data == 'work') {
+      if ($('.work_form').is(':visible')) {
+        $('.work_form').slideUp(500);
+      } else {
+        $('.work_form').slideDown(500);
       }
     }
 
