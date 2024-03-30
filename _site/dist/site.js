@@ -4,6 +4,11 @@ let $ = jQuery.noConflict();
 
 $(document).ready(function () {
 
+  //if the url has contact in it, find .signupform and make it red
+  if (window.location.href.indexOf('contact') > -1) {
+    $('#newsletter_submit').css('background', '#CF3636');
+  }
+
   $('.work_form').slideDown(500);
 
   $('.contact_block').on('click', function () {
