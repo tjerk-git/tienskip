@@ -378,17 +378,17 @@ h2 {
   width:70rem;
   margin-top: -5rem;
   margin-bottom:2rem;
-  background: url("/images/freewilly_2.jpg");
+  background: url("/images/3.webp");
   background-size: cover;
   background-position: center;
 }
 
 .team{
- background-image: url("/images/over_team.jpg");
+ background-image: url("/images/2.webp");
 }
 
 .eenddag {
-  background-image: url("/images/eendagvantienskip.jpg");
+  background-image: url("/images/9.webp");
 }
 
 .impression_container {
@@ -446,7 +446,7 @@ h2 {
 .card {
   width: 35rem;
   height: 45rem;
-  background-image: url("/images/succes_1.jpg");
+  background-image: url("/images/1.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -456,15 +456,15 @@ h2 {
 }
 
 .first {
-  background-image: url("/images/succes_1.jpg");
+  background-image: url("/images/8.webp");
 }
 
 .second {
-  background-image: url("/images/succes_2.jpg");
+  background-image: url("/images/3.webp");
 }
 
 .third {
-  background-image: url("/images/succes_3.jpg");
+  background-image: url("/images/11.webp");
 }
 
 .card_red_box {
@@ -611,17 +611,16 @@ svg {
 }
 
 .vrijwilleger_1 {
-  background: url("/images/freewilly_1.jpg");
+  background: url("/images/5.webp");
   background-size: cover;
   background-position: center;
 }
 
 .vrijwilleger_2 {
-  background: url("/images/freewilly_2.jpg");
+  background: url("/images/6.webp");
   background-size: cover;
   background-position: center;
 }
-
 
 footer {
   display: flex;
@@ -758,7 +757,7 @@ footer {
 .missie{
   width: 100vw;
   height: 100vh;
-  background: url("/images/visie_tienskip_team.jpg");
+  background: url("/images/4.webp");
   background-size: cover;
   background-position: center;
 }
@@ -790,7 +789,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 .special_list{
@@ -799,6 +797,7 @@ footer {
   flex-direction: column;
   margin-top:2rem;
 }
+
 .special_list li{
   background:white;
   padding:1rem;
