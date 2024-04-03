@@ -943,3 +943,227 @@ footer {
   height:70rem;
   position:relative;
 }
+
+.visie{
+  background: var(--abe);
+}
+
+.visie_container{
+  max-width:1200px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10rem;
+  position:relative;
+}
+
+.visie_container img{
+  width:70rem;
+  margin-left:-60rem;
+}
+
+.purple_content{
+  padding:2rem;
+  background:var(--purple);
+  color:white;
+  display:block;
+  position:absolute;
+  font-size:1.8rem;
+  width:60rem;
+  position:absolute;
+  left:50%;
+}
+
+.visie_text{
+  position:absolute;
+  top:30px;
+  right:370px;
+  font-size:6rem;
+}
+
+.quote_icon{
+  font-size:8rem;
+  color:white;
+}
+
+.upper_quote{
+  margin-top: -5rem;
+    margin-left: -3rem;
+    font-size:6rem;
+}
+
+.lower_quote{
+  margin-bottom: -5rem;
+  margin-right: -3rem;
+  position:absolute;
+  right:0;
+  bottom:0;
+  transform: rotate(180deg);
+}
+
+.meer_weten_container{
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  bottom: 65px;
+  left: 59%;
+  gap:1rem;
+}
+.meer_weten_container h3{
+  text-transform:uppercase;
+  font-size:2rem;
+  color:white;
+}
+
+
+.ballenbak{
+  position:relative;
+  height:60vh;
+  width:100vw;
+}
+
+.controls{
+  position:absolute;
+  display:flex;
+  gap:2rem;
+  top:0;
+}
+
+.cmd-person {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    margin-left: -3vw;
+    margin-top: -3vw;
+    border: 1px solid #000;
+    background-position: center;
+    background-size: cover;
+}
+@media (orientation: portrait) and (max-width: 640px) {
+    .cmd-person {
+        width: 16vw;
+        height: 16vw;
+        margin-left: -8vw;
+        margin-top: -8vw;
+    }
+}
+.cmd-person.--circle {
+    border-radius: 9999px;
+    background-color: #9acd32;
+}
+.cmd-person.--square {
+    background-color: #c71585;
+}
+.cmd-info-panel {
+    position: absolute;
+    left: 4vw;
+    top: 0;
+    height: 100%;
+    width: calc(100% - 8vw);
+    display: flex;
+    align-items: flex-start;
+}
+.cmd-info-panel__text {
+    color: white;
+    font-size: 3vw;
+    line-height: 0.9;
+    z-index: 1;
+}
+.cmd-info-panel__text-name {
+    font-weight: 800;
+}
+.cmd-info-panel__text-info,
+.cmd-info-panel__text-name {
+    -webkit-transform: translateX(-20vw);
+    transform: translateX(-20vw);
+    opacity: 0;
+}
+.cmd-info-panel.--show .cmd-info-panel__text-info,
+.cmd-info-panel.--show .cmd-info-panel__text-name {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.4s ease-out 100ms, opacity 0.4s ease-out 100ms;
+    transition: transform 0.4s ease-out 100ms, opacity 0.4s ease-out 100ms, -webkit-transform 0.4s ease-out 100ms;
+}
+.cmd-info-panel.--show .cmd-info-panel__text-info {
+    transition: transform 0.4s ease-out 150ms, opacity 0.4s ease-out 150ms;
+    transition: transform 0.4s ease-out 150ms, opacity 0.4s ease-out 150ms, -webkit-transform 0.4s ease-out 150ms;
+}
+.cmd-info-panel.--hide .cmd-info-panel__text-info,
+.cmd-info-panel.--hide .cmd-info-panel__text-name {
+    -webkit-transform: translate(0, -2vw);
+    transform: translate(0, -2vw);
+    transition: all 100ms ease-in;
+}
+.cmd-info-panel.--hide .cmd-info-panel__text-info {
+    transition: all 100ms ease-in 40ms;
+}
+.cmd-new-btn {
+    position: absolute;
+    left: 50%;
+    top: 2.5vw;
+    cursor: pointer;
+    display: none;
+}
+@media (orientation: portrait) and (max-width: 640px) {
+    .cmd-new-btn {
+        top: 7.5vw;
+    }
+}
+.cmd-new-btn__graphic {
+    background-image: url("images/plus-pink.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 500ms ease-out;
+    transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
+    background-color: #ff48b0;
+    border-radius: 9999px;
+    overflow: hidden;
+    width: 4vw;
+    height: 4vw;
+    margin-left: -2vw;
+}
+@media (orientation: portrait) and (max-width: 640px) {
+    .cmd-new-btn__graphic {
+        width: 16vw;
+        height: 16vw;
+        margin-left: -8vw;
+    }
+}
+.cmd-new-btn__graphic:hover {
+    -webkit-transform: scale(1.9);
+    transform: scale(1.9);
+    transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), -webkit-transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@media (orientation: portrait) and (max-width: 640px) {
+    .cmd-new-btn__graphic:hover {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+.cmd-new-btn__graphic:active {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
+    transition: none;
+}
+@media (orientation: portrait) and (max-width: 640px) {
+    .cmd-new-btn__graphic:active {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+.cmd-people-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--abe);
+    z-index:0;
+}

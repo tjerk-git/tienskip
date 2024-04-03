@@ -1,0 +1,238 @@
+{
+    "data": [
+        {
+            "name": "John Bos",
+            "bio": "User Experience Design, User Interface Design, Web Design, App Design, Project Management",
+            "image": "john_bos"
+        },
+        {
+            "name": "Rik Berkman",
+            "bio": "Art Direction, Design Thinking, Concept, Art, Creative Mindset, Visual Identity",
+            "image": "rik_berkman"
+        },
+        {
+            "name": "Stephan Caffa",
+            "bio": "Game Development (Godot/Construct2), Programmeren (GDScript), Prototyping (Games), 3D (Basis Blender), Grafisch Ontwerp (Pixel-Art), Animatie (2D / Pixel-Art).",
+            "image": "stephan_caffa"
+        },
+        {
+            "name": "Loek Canton",
+            "bio": "Onderzoeken, Field Research, User Experience Design, Industrial Design, product development",
+            "image": "loek_canton"
+        },
+        {
+            "name": "Gonzalo Cid",
+            "bio": "Music production and audio engineering.",
+            "image": "gonzalo_cid"
+        },
+        {
+            "name": "Jan Willem Deiman",
+            "bio": "Animatie, Motion Design, Contemporary Art, Installation Art, Media Art",
+            "image": "jan_willem_deiman"
+        },
+        {
+            "name": "Tjerk Dijkstra",
+            "bio": "Research, Development, Webdesign, Programming, Human Centered Design",
+            "image": "tjerk_dijkstra"
+        },
+        {
+            "name": "Raymond van dongelen",
+            "bio": "",
+            "image": "raymond_van_dongelen"
+        },
+        {
+            "name": "Wander Elout",
+            "bio": "Pedagogiek, Conceptontwikkeling, Bullet Journalling, Digitaal Minimalisme, Creatief Persoonlijk Leiderschap, IFTTT, Notion",
+            "image": "wander_elout"
+        },
+        {
+            "name": "Michel van Galen",
+            "bio": "Conceptontwikkeling, Design en Strategie (N3), Creatief leiderschap, persoonlijk leiderschap, Entrepeneurship, Art Direction, Art",
+            "image": "michel_van_galen"
+        },
+        {
+            "name": "Hans van Gestel",
+            "bio": "Entrepreneurship, Design Thinking, Online Marketing, Smooth Jazz, Saxophone",
+            "image": "hans_van_gestel"
+        },
+        {
+            "name": "Thomas Geurink",
+            "bio": "UX Design, Grafisch Ontwerp, Branding, Designsprints, Design Research",
+            "image": "thomas_geurink"
+        },
+        {
+            "name": "Niek Heegen",
+            "bio": "Animatie, Broadcasting (studio of evenement), Camera's, Cinematografie, Color Grading, Crossmedia, Regie, Editing, Film/video, Motion Graphics, Compositing, Storyboarding, Visuele effecten, Script/scenario, Special effects, Transmedia storytelling, Alternate Reality Games, (Pre- & post-) Productie",
+            "image": "niek_heegen"
+        },
+        {
+            "name": "René Heite",
+            "bio": "Programmeren, Scripten, Unity, UI & UX design, Functioneel & Technisch ontwerpen van digitale middelen, Kritisch denker, verder ben ik een creatieve (vrij/om)denker... so, try me!",
+            "image": "rene_heite"
+        },
+        {
+            "name": "Swanhilde de jong",
+            "bio": "Onderzoek, prototype testing, documentaire, voorlichtingsfilm",
+            "image": "swanhilde_de_jong"
+        },
+        {
+            "name": "Gerjan Kelder",
+            "bio": "Internationalization, Sound Design, Songwriting, Music Production (and all its related subjects like Research, Creating etc.)",
+            "image": "gerjan_kelder"
+        },
+        {
+            "name": "Lolkje van der kooi",
+            "bio": "2D art/tekenen, lettering/kalligrafie, pedagogiek/educatie, alles mbt afstuderen",
+            "image": "lolkje_van_der_kooi"
+        },
+        {
+            "name": "Margreet Kooijker",
+            "bio": "Communicatie, projectmanagement",
+            "image": "margreet_kooijker"
+        },
+        {
+            "name": "Gerald Kooistra",
+            "bio": "Communicatie, conceptontwikkeling, copywriting",
+            "image": "gerald_kooistra"
+        },
+        {
+            "name": "Robin Koster",
+            "bio": "Grafisch ontwerp, fotografie, kunst, visual identity, copywriting, concept art, experimenting.",
+            "image": "robin_koster"
+        },
+        {
+            "name": "Annet van kruiningen",
+            "bio": "Content & online marketing, marketing, communicatie, social media, branding, ondernemen",
+            "image": "annet_van_kruiningen"
+        },
+        {
+            "name": "Merel Laferte",
+            "bio": "Kunst_ en Architectuurgeschiedenis, Leren, Mentoraat",
+            "image": "merel_laferte"
+        },
+        {
+            "name": "Levy, Daan",
+            "bio": "",
+            "image": "daan_levy"
+        },
+        {
+            "name": "Joke Lunsing",
+            "bio": "Trendwatching, Conceptontwikkeling, Kunst & Design, Storytelling, Persoonlijk Leiderschap,",
+            "image": "joke_lunsing"
+        },
+        {
+            "name": "Jeroen Nauta",
+            "bio": "3D-vormgeving, serious game-ontwerp, onderzoek, storytelling, beeldcompositie, zelfontwikkeling",
+            "image": "jeroen_nauta"
+        },
+        {
+            "name": "Jaap Praamstra",
+            "bio": "(visual) storytelling, editing, film/video/audio, radio/podcast, drones, fotografie, crossmediale uitingen.",
+            "image": "jaap_praamstra"
+        },
+        {
+            "name": "Reinders, Ronald",
+            "bio": ""
+        },
+        {
+            "name": "Werner Rinia",
+            "bio": "Graphic Design, InDesign / Illustrator / Photoshop, Concepting, Storytelling, Art History, and loads more, pick my brain.",
+            "image": "werner_rinia"
+        },
+        {
+            "name": "Mara van Rooij",
+            "bio": "Communiceren, Leren, samenwerken, nederlandse taal",
+            "image": "mara_van_rooij"
+        },
+        {
+            "name": "Stacey Sanders",
+            "bio": "Onderzoek, Psychologie, Statistiek",
+            "image": "stacey_sanders"
+        },
+        {
+            "name": "Amarins Schuilenburg",
+            "bio": "Alles mbt stage, netwerken, Communication, Future skills, samenwerkingen, afstudeerprojecten binnen Future Design Factory.",
+            "image": "amarins_schuilenburg"
+        },
+        {
+            "name": "Sarah Sixma",
+            "bio": "Conceptontwikkeling, persoonlijk creatief leiderschap, trendwatching + trendforecasting, design, raakvlak + crossovers tussen designdiciplines,  beeldtaal & visuele poëzie, meditatie & visualisatie, zingeving,  vinden en gebruiken van je eigen inspiratie, mode, zeefdrukken, creatief experiment",
+            "image": "sarah_sixma"
+        },
+        {
+            "name": "Mérijn Stam",
+            "bio": "Design Research, User Experience, Project Management, Innovation Strategy, Consultancy, Stakeholder management, Prototyping",
+            "image": "merijn_stam"
+        },
+        {
+            "name": "Pauline Stoel",
+            "bio": "Research, Design Thinking, Prototype testing",
+            "image": "pauline_stoel"
+        },
+        {
+            "name": "Sjoukje Terpstra",
+            "bio": "Grafisch ontwerp, collectie ontwerp, branding, trendonderzoek, designthinking, creative mindset, concept, art, expositie",
+            "image": "sjoukje_terpstra"
+        },
+        {
+            "name": "Vincent Tillema",
+            "bio": "Conceptontwikkeling, grafisch ontwerp (vooral Illustrator/Photoshop), (visual) storytelling, research",
+            "image": "vincent_tillema"
+        },
+        {
+            "name": "Alice ter Veld",
+            "bio": "Personal and professional development, personal leadership, team development, project management, organize, learn",
+            "image": "alice_ter_veld"
+        },
+        {
+            "name": "Eric Voigt",
+            "bio": "Future Design, Design approaches, workshop facilitating, Future Design Factory, Networking, intrapreneurship, Future Thinking",
+            "image": "eric_voigt"
+        },
+        {
+            "name": "Paul de Vreede",
+            "bio": "illustratie, strips, grafisch, conceptontwikkeling, typografie, fotografie, storytelling, Photoshop, Procreate, Indesign, beeldtheorie",
+            "image": "paul_de_vreede"
+        },
+        {
+            "name": "Peter Wassenaar",
+            "bio": "Graphic Design, Arts, Art Based Research, Project Management, Jazz Guitar, Entrepeneurship, Learning",
+            "image": "peter_wassenaar"
+        },
+        {
+            "name": "Jacco de Weerd",
+            "bio": "Marketing, business development, entrepreneurship, research, educational science, Arts, gastronomy, history, trend watching",
+            "image": "jacco_de_weerd"
+        },
+        {
+            "name": "Jop Wielens",
+            "bio": "Games ontwikkelen, websites bouwen, interactieve installaties, digitale gekkigheid",
+            "image": "jop_wielens"
+        },
+        {
+            "name": "Gerben Wiersma",
+            "bio": "Onderwijsontwikkeling, NLP, Programmeren, Teamwork, Team Development, Leren Leren, Mindmappen",
+            "image": "gerben_wiersma"
+        },
+        {
+            "name": "Esther Wijdeveld",
+            "bio": "Illustratie, visueel ontwerp, concept art, game ontwikkelings proces (digitaal en analoog) freelancing",
+            "image": "esther_wijdeveld"
+        },
+        {
+            "name": "Mark Winkel",
+            "bio": "3D modeling & _animation, Motion Design, Visual Effects, Generative Art/Design, Data Visualization, interactive installations",
+            "image": "mark_winkel"
+        },
+        {
+            "name": "Kirsten Zinger",
+            "bio": "(Visual) storytelling, copywriting, digital marketing, concepting, communication, design research, sketchnoting",
+            "image": "kirsten_zinger"
+        },
+        {
+            "name": "Martha van der Zwaag",
+            "bio": "Nederlandse taal, meertaligheid, kunstgeschiedenis, algemene geschiedenis, storytelling (visual), research, communication, projectmanagement,",
+            "image": "martha_van_der_zwaag"
+        }
+    ]
+}
