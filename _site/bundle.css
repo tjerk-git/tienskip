@@ -955,6 +955,15 @@ footer {
   position:relative;
 }
 
+.doe-er-zelf-container{
+  background: url("/images/6.webp"); 
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  height:70rem;
+  position:relative;
+}
+
 .visie{
   background: var(--abe);
 }
@@ -1177,14 +1186,4 @@ footer {
     overflow: hidden;
     background: var(--abe);
     z-index:0;
-}
-
-
-.doe-er-zelf-container{
-  background: url("/images/6.webp"); 
-  background-size: cover;
-  background-position: center;
-  width:100%;
-  height:70rem;
-  position:relative;
 }
