@@ -253,6 +253,15 @@ swiper-container {
   z-index: -1;
 }
 
+.red-backdrop {
+  background: var(--darkred);
+  height: 110vh;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  z-index: -1;
+}
+
 .purple-backdrop {
   background: var(--purple);
   height: 135vh;
@@ -391,9 +400,14 @@ h2 {
   background-image: url("/images/6.webp");
 }
 
+.verschil{
+  background-image: url("/images/12.webp");
+}
+
 .impression_container {
-  margin-top: 10rem;
+  margin-top: 15rem;
   display: flex;
+  margin-bottom:15rem;
 }
 
 .button {
@@ -503,16 +517,13 @@ h2 {
   margin: 0 auto;
 }
 
-.doe_er_wat_aan {
-  padding: 10rem;
-}
-
 .doe_er_wat_aan_container {
   display: flex;
   max-width: 1200px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding:5rem;
 }
 
 #tienskip__map {
@@ -937,6 +948,15 @@ footer {
 
 .over-tienskip-container{
   background: url("/images/2-edit.webp"); 
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  height:70rem;
+  position:relative;
+}
+
+.doe-er-zelf-container{
+  background: url("/images/6.webp"); 
   background-size: cover;
   background-position: center;
   width:100%;
