@@ -1,6 +1,13 @@
 ---
 layout: layout.njk
 title: Doe er zelf wat aan
+tekst_voor_doe_er_zelf: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consectetur magnam, dolores, id qui
+              dolorem aliquam exercitationem repudiandae magni possimus natus at quam maiores eligendi repellat
+              recusandae
+              laborum? Iusto, officiis?
+pijler_1: Wij verbreden de betekenis van democratie.
+pijler_2: Wij laten jonge burgers democratie ervaren.
+pijler_3: Wij dragen bij aan de democratie van morgen.
 ---
 
 <div class="red-backdrop"></div>
@@ -26,10 +33,7 @@ title: Doe er zelf wat aan
               </h2>
             </div>
             <p class="normal_body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consectetur magnam, dolores, id qui
-              dolorem aliquam exercitationem repudiandae magni possimus natus at quam maiores eligendi repellat
-              recusandae
-              laborum? Iusto, officiis?
+              {{tekst_voor_doe_er_zelf}}
             </p>
 
             <a href="#" class="button blue">Help zelf ook mee</a>
@@ -51,9 +55,9 @@ title: Doe er zelf wat aan
 
 
           <ul class="special_list">
-            <li><span class="number red_box">01.</span>Wij verbreden de betekenis van democratie.</li>
-            <li><span class="number red_box">02.</span>Wij laten jonge burgers democratie ervaren.</li>
-            <li><span class="number red_box">03.</span>Wij dragen bij aan de democratie van morgen.</li>
+            <li><span class="number red_box">01.</span>{{ pijler_1 }}</li>
+            <li><span class="number red_box">02.</span>{{ pijler_2 }}</li>
+            <li><span class="number red_box">03.</span>{{ pijler_3 }}</li>
           </ul>
         </div>
       </div>
