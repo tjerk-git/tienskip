@@ -1042,6 +1042,10 @@ footer {
   position:relative;
   height:60vh;
   width:100vw;
+  background: var(--abe);
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .controls{
@@ -1071,7 +1075,7 @@ footer {
 }
 .cmd-person.--circle {
     border-radius: 9999px;
-    background-color: #9acd32;
+    background-color: var(--darkred);
 }
 .cmd-person.--square {
     background-color: #c71585;
@@ -1084,13 +1088,15 @@ footer {
     width: calc(100% - 8vw);
     display: flex;
     align-items: flex-start;
+
 }
+
 .cmd-info-panel__text {
-    color: white;
+    color: black;
     font-size: 3vw;
     line-height: 0.9;
-    z-index: 1;
 }
+
 .cmd-info-panel__text-name {
     font-weight: 800;
 }
@@ -1102,6 +1108,9 @@ footer {
 }
 .cmd-info-panel.--show .cmd-info-panel__text-info,
 .cmd-info-panel.--show .cmd-info-panel__text-name {
+      background: white;
+    padding:2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
@@ -1146,6 +1155,7 @@ footer {
     width: 4vw;
     height: 4vw;
     margin-left: -2vw;
+    display:none;
 }
 @media (orientation: portrait) and (max-width: 640px) {
     .cmd-new-btn__graphic {
@@ -1184,6 +1194,5 @@ footer {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: var(--abe);
     z-index:0;
 }

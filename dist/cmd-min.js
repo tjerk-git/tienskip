@@ -2,6 +2,13 @@ var $ = jQuery.noConflict();
 $(document).ready(function (e) {
     SiteManager.init();
 });
+
+// wait 3 seconds and then click the button
+setTimeout(function () {
+    $(".js-drop-docent").click();
+}, 3000);
+
+
 var SiteManager = {
     nScreenWidth: 0,
     nScreenHeight: 0,
@@ -21,7 +28,7 @@ var SiteManager = {
     handleStageResize: function () {
         console.log("handleStageResize"), (this.nScreenWidth = window.innerWidth), (this.nScreenHeight = window.innerHeight);
 
-        this.nScreenHeight = 600;
+        this.nScreenHeight = 700;
 
         var e = 0.01 * this.nScreenHeight,
             t = 0.01 * this.nScreenWidth;
@@ -143,7 +150,7 @@ var SiteManager = {
                 n = Matter.Bodies.rectangle(SiteManager.nScreenWidth + 0.5 * this.WALL_WIDTH, -1 * SiteManager.nScreenHeight, this.WALL_WIDTH, 4 * SiteManager.nScreenHeight, { isStatic: !0 });
             this.aWallsAndFloor.push(e), this.aWallsAndFloor.push(t), this.aWallsAndFloor.push(n), Matter.Composite.add(this.world, this.aWallsAndFloor);
             for (var i = 0; i < PeopleManager.aPeople.length; i++) Matter.World.remove(this.world, [PeopleManager.aPeople[i].body]);
-            console.log("JOP 1"), PeopleManager.clearAllPeople();
+            PeopleManager.clearAllPeople();
         },
         handleStageResize: function () {
             window.clearTimeout(this.nResizeTimeoutID), (this.nResizeTimeoutID = window.setTimeout(this.onNowHandleResize.bind(this), 500)), this.onNowHandleResize();
@@ -188,7 +195,6 @@ var SiteManager = {
             this.myPanel.addClass("--show"),
                 this.myNameSection.html(this.oCurrentData.name.toUpperCase()),
                 this.myInfoSection.html(this.oCurrentData.bio.toUpperCase()),
-                $("body").addClass("--info-version"),
                 (this.bIsShowing = !0),
                 (this.bIsInTransition = !1),
                 console.log("showNewPersonInfo");
