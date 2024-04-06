@@ -1,12 +1,14 @@
 var $ = jQuery.noConflict();
 $(document).ready(function (e) {
     SiteManager.init();
+
 });
 
 // wait 3 seconds and then click the button
 setTimeout(function () {
     $(".js-drop-docent").click();
 }, 3000);
+
 
 
 var SiteManager = {
@@ -41,6 +43,14 @@ var SiteManager = {
             (e[t] = e[n]), (e[n] = i);
         }
     },
+    filterArray: function (e) {
+        // remove all elements that don't contain where the property member_since is greater than 2015
+        var filtered = e.filter(function (el) {
+            return el.member_year > 2020;
+        });
+
+        return filtered;
+    },
     onUpdateStage: function () {
         PeopleManager.onUpdateStage(), PhysicsManager.onUpdateStage(), window.requestAnimationFrame(this.onUpdateStage.bind(this));
     },
@@ -55,8 +65,6 @@ var SiteManager = {
         init: function () {
             $.getJSON("/dist/people.json", this.onPeopleDataLoaded.bind(this)),
                 SiteManager.mob ? $(".cmd-people-container").on("touchend", this.onMousedUp.bind(this)) : $(".cmd-people-container").on("mouseup", this.onMousedUp.bind(this));
-
-
         },
         activateNewButton: function () {
             this.bNewButtonActive || (this.myNewPersonBtn.on("click", this.onNewClicked.bind(this)), this.myNewPersonBtn.fadeIn(), (this.bNewButtonActive = !0));
@@ -109,6 +117,8 @@ var SiteManager = {
             for (var e = 0; e < this.aPeople.length; e++) this.aPeople[e].div.css({ left: this.aPeople[e].body.position.x, top: this.aPeople[e].body.position.y, transform: "rotate(" + this.aPeople[e].body.angle + "rad)" });
         },
     },
+
+
     PhysicsManager = {
         FLOOR_HEIGHT: 1e3,
         WALL_WIDTH: 1e3,
@@ -200,4 +210,12 @@ var SiteManager = {
                 console.log("showNewPersonInfo");
         },
     };
+
+filterButton.click(function () {
+    const filteredData = SiteManager.filterArray(PeopleManager.myPeopleData);
+    PeopleManager.clearAllPeople();
+    PeopleManager.myPeopleData = filteredData;
+    // Trigger people loading as if it were fresh data
+    PeopleManager.onPeopleDataLoaded({ data: filteredData });
+});
 //# sourceMappingURL=cmd-min.js.map

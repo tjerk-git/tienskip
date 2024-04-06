@@ -3,17 +3,20 @@
         {
             "name": "John Bos",
             "bio": "User Experience Design, User Interface Design, Web Design, App Design, Project Management",
-            "image": "john_bos"
+            "image": "john_bos",
+            "member_year": "2019"
         },
         {
             "name": "Rik Berkman",
             "bio": "Art Direction, Design Thinking, Concept, Art, Creative Mindset, Visual Identity",
-            "image": "rik_berkman"
+            "image": "rik_berkman",
+            "member_year": "2019"
         },
         {
             "name": "Stephan Caffa",
             "bio": "Game Development (Godot/Construct2), Programmeren (GDScript), Prototyping (Games), 3D (Basis Blender), Grafisch Ontwerp (Pixel-Art), Animatie (2D / Pixel-Art).",
-            "image": "stephan_caffa"
+            "image": "stephan_caffa",
+            "member_year": "2021"
         },
         {
             "name": "Loek Canton",
