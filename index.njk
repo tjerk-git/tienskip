@@ -79,22 +79,8 @@ title: Tienskip
 
     </main>
 
-    <section class="missie">
-      <div class="missie_container">
-            <div class="missie_subcontainer">
-        <h1>Missie</h1>
-    
-          <h2>Onze drie <span class="red_box">belangrijkste pijlers</span></h2>
+    {% include "partials/_missie.njk" %}
 
-
-          <ul class="special_list">
-            <li><span class="number red_box">01.</span>Wij verbreden de betekenis van democratie.</li>
-            <li><span class="number red_box">02.</span>Wij laten jonge burgers democratie ervaren.</li>
-            <li><span class="number red_box">03.</span>Wij dragen bij aan de democratie van morgen.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
     <section class="blue our_events">
       <div class="our_events_container">
@@ -116,26 +102,5 @@ title: Tienskip
         <h1 class="big_text">Doe er <span class="blue_box">zelf wat aan</span></h1>
       </div>
 
-      <div class="split_container">
-        <div class="split_card radius-1 vrijwilleger_1">
-          <div class="split_card_content radius-2-small">
-            <h2 class="split_card_blue">Word vrijwilliger</h2>
-            <p>
-              De projecten van Tienskip draaien voornamelijk op de inzet van vrijwilligers! Zonder deze vrijwilligers
-              zou
-              Tienskip dus niet kunnen bestaan. Deze mensen helpen de organisatie allen op hun eigen manier.
-            </p>
-          </div>
-        </div>
-        <div class="split_card radius-2 vrijwilleger_2">
-          <div class="split_card_content radius-1-small">
-            <h2 class="split_card_red">Word donateur</h2>
-            <p>
-              De projecten van Tienskip draaien voornamelijk op de inzet van vrijwilligers! Zonder deze vrijwilligers
-              zou
-              Tienskip dus niet kunnen bestaan. Deze mensen helpen de organisatie allen op hun eigen manier.
-            </p>
-          </div>
-        </div>
-      </div>
+     {% include "partials/_donation.njk" %}
     </section>
