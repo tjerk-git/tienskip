@@ -9,7 +9,8 @@ setTimeout(function () {
     $(".js-drop-docent").click();
 }, 3000);
 
-
+const API_URL = "http://localhost:8000/api/people";
+//const LOCAL_API_URL = "/dist/people.json";
 
 var SiteManager = {
     nScreenWidth: 0,
@@ -63,7 +64,7 @@ var SiteManager = {
         myPeopleData: [],
         bNewButtonActive: !1,
         init: function () {
-            $.getJSON("/dist/people.json", this.onPeopleDataLoaded.bind(this)),
+            $.getJSON(API_URL, this.onPeopleDataLoaded.bind(this)),
                 SiteManager.mob ? $(".cmd-people-container").on("touchend", this.onMousedUp.bind(this)) : $(".cmd-people-container").on("mouseup", this.onMousedUp.bind(this));
         },
         activateNewButton: function () {
@@ -74,7 +75,9 @@ var SiteManager = {
         },
         onPeopleDataLoaded: function (e) {
 
-            this.activateNewButton(), (this.myPeopleData = e.data), SiteManager.shuffleArray(this.myPeopleData);
+            console.log(e);
+
+            this.activateNewButton(), (this.myPeopleData = e), SiteManager.shuffleArray(this.myPeopleData);
             this.nCurrentPersonID = 0;
 
 
@@ -93,7 +96,7 @@ var SiteManager = {
             this.aPeople.push({ id: this.nCurrentPersonID, div: t, body: PhysicsManager.addPersonPhysicsObject(e) }),
                 console.log("this.myPeopleData[this.nCurrentPersonID]", this.myPeopleData[this.nCurrentPersonID], this.myPeopleData, this.nCurrentPersonID);
             var n = this.myPeopleData[this.nCurrentPersonID].email;
-            t.css({ backgroundImage: 'url("../images/heads/' + this.myPeopleData[this.nCurrentPersonID].image + '.jpeg' })
+            t.css({ backgroundImage: 'url("' + this.myPeopleData[this.nCurrentPersonID].avatar })
             n &&
                 SiteManager.mob ? t.on("touchstart", this.onPersonClicked.bind(this)) : t.on("mousedown", this.onPersonClicked.bind(this)),
                 this.nCurrentPersonID++,
@@ -204,7 +207,7 @@ var SiteManager = {
         showNewPersonInfo: function () {
             this.myPanel.addClass("--show"),
                 this.myNameSection.html(this.oCurrentData.name.toUpperCase()),
-                this.myInfoSection.html(this.oCurrentData.bio.toUpperCase()),
+                this.myInfoSection.html(this.oCurrentData.description.toUpperCase()),
                 (this.bIsShowing = !0),
                 (this.bIsInTransition = !1),
                 console.log("showNewPersonInfo");
