@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+ */
+
 
 *,
 *:before,
@@ -17,25 +19,25 @@
 }
 
 h1 {
-  font-family: "Roboto Slab", serif;
+  font-family: "aglet-slab", serif;
   font-size: 3.2rem;
   font-weight: 700;
 }
 
 h2 {
-  font-family: "Roboto Slab", serif;
+  font-family: "aglet-slab", serif;
   font-size: 2.8rem;
   font-weight: 700;
 }
 
 h3 {
-  font-family: "Roboto Slab", serif;
+  font-family: "aglet-slab", serif;
   font-size: 2.2rem;
   font-weight: 700;
 }
 
 p {
-  font-family: "Roboto", serif;
+  font-family: "aglet-slab", serif;
 }
 
 html {
@@ -43,7 +45,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: "aglet-slab", serif;
   font-size: 1.2rem;
   line-height: 1.5;
   color: var(--black);
@@ -657,14 +659,14 @@ footer {
   width: 60%;
   border: none;
   font-size: 1.8rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "aglet-slab", serif;
 }
 
 .signup_form input::placeholder {
   color: var(--black);
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Roboto Slab", serif;
+  font-family: "aglet-slab", serif;
 }
 
 .signup_form button {
@@ -678,7 +680,7 @@ footer {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-family: "Roboto Slab", serif;
+  font-family: "aglet-slab", serif;
 }
 
 .address_container {
@@ -941,7 +943,7 @@ footer {
   text-align:left;
   display:inline-block;
   font-weight:800;
-  font-family: "Roboto Slab", serif;
+  font-family: "aglet-slab", serif;
   width:20rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
