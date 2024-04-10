@@ -1067,7 +1067,7 @@ footer {
 }
 
 .js-teacher-year{
-  font-size:1rem;
+  font-size:2rem;
 }
 
 @media (orientation: portrait) and (max-width: 640px) {
