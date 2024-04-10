@@ -1065,6 +1065,11 @@ footer {
     background-position: center;
     background-size: cover;
 }
+
+.js-teacher-year{
+  font-size:1rem;
+}
+
 @media (orientation: portrait) and (max-width: 640px) {
     .cmd-person {
         width: 16vw;
@@ -1085,7 +1090,7 @@ footer {
     left: 4vw;
     top: 0;
     height: 100%;
-    width: calc(100% - 8vw);
+    width: calc(100% - 3vw);
     display: flex;
     align-items: flex-start;
 

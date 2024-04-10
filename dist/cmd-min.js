@@ -179,12 +179,14 @@ var SiteManager = {
         myPanel: $(".cmd-info-panel"),
         myNameSection: $(".js-teacher-name"),
         myInfoSection: $(".js-teacher-info"),
+        myMemberYear: $(".js-teacher-year"),
+        myMemberFact: $(".js-teacher-fact"),
         bIsShowing: !1,
         oCurrentData: null,
         bIsInTransition: !1,
         init: function () { },
         resetScene: function () {
-            this.bIsShowing && (this.myPanel.removeClass("--show"), this.myNameSection.html(""), this.myInfoSection.html(""), $("body").removeClass("--info-version"), (this.bIsShowing = !1), (this.bIsInTransition = !1));
+            this.bIsShowing && (this.myPanel.removeClass("--show"), this.myNameSection.html(""), this.myInfoSection.html(""), this.myMemberYear.html(""), this.myMemberFact.html(""), $("body").removeClass("--info-version"), (this.bIsShowing = !1), (this.bIsInTransition = !1));
         },
         showInfo: function (e) {
             this.bIsInTransition ||
@@ -208,6 +210,8 @@ var SiteManager = {
             this.myPanel.addClass("--show"),
                 this.myNameSection.html(this.oCurrentData.name.toUpperCase()),
                 this.myInfoSection.html(this.oCurrentData.description),
+                this.myMemberYear.html(this.oCurrentData.member_since),
+                this.myMemberFact.html(this.oCurrentData.fact),
                 (this.bIsShowing = !0),
                 (this.bIsInTransition = !1),
                 console.log("showNewPersonInfo");
