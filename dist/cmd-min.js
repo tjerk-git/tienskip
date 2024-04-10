@@ -212,6 +212,7 @@ var SiteManager = {
                 (this.bIsInTransition = !1),
                 console.log("showNewPersonInfo");
         },
+
     };
 
 filterButton.click(function () {
