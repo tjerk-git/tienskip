@@ -207,7 +207,7 @@ var SiteManager = {
         showNewPersonInfo: function () {
             this.myPanel.addClass("--show"),
                 this.myNameSection.html(this.oCurrentData.name.toUpperCase()),
-                this.myInfoSection.html(this.oCurrentData.description.toUpperCase()),
+                this.myInfoSection.html(this.oCurrentData.description),
                 (this.bIsShowing = !0),
                 (this.bIsInTransition = !1),
                 console.log("showNewPersonInfo");
