@@ -31,7 +31,7 @@ var SiteManager = {
     handleStageResize: function () {
         console.log("handleStageResize"), (this.nScreenWidth = window.innerWidth), (this.nScreenHeight = window.innerHeight);
 
-        this.nScreenHeight = 700;
+        this.nScreenHeight = 622;
 
         var e = 0.01 * this.nScreenHeight,
             t = 0.01 * this.nScreenWidth;
@@ -181,12 +181,13 @@ var SiteManager = {
         myInfoSection: $(".js-teacher-info"),
         myMemberYear: $(".js-teacher-year"),
         myMemberFact: $(".js-teacher-fact"),
+        myAvatar: $(".js-teacher-avatar"),
         bIsShowing: !1,
         oCurrentData: null,
         bIsInTransition: !1,
         init: function () { },
         resetScene: function () {
-            this.bIsShowing && (this.myPanel.removeClass("--show"), this.myNameSection.html(""), this.myInfoSection.html(""), this.myMemberYear.html(""), this.myMemberFact.html(""), $("body").removeClass("--info-version"), (this.bIsShowing = !1), (this.bIsInTransition = !1));
+            this.bIsShowing && (this.myPanel.removeClass("--show"), this.myNameSection.html(""), this.myInfoSection.html(""), this.myMemberYear.html(""), this.myMemberFact.html(""), this.myAvatar.html(""), (this.bIsShowing = !1), (this.bIsInTransition = !1));
         },
         showInfo: function (e) {
             this.bIsInTransition ||
@@ -208,10 +209,11 @@ var SiteManager = {
         },
         showNewPersonInfo: function () {
             this.myPanel.addClass("--show"),
-                this.myNameSection.html(this.oCurrentData.name.toUpperCase()),
-                this.myInfoSection.html(this.oCurrentData.description),
-                this.myMemberYear.html(this.oCurrentData.member_since),
-                this.myMemberFact.html(this.oCurrentData.fact),
+                this.myNameSection.html(this.oCurrentData.name ? this.oCurrentData.name.toUpperCase() : ""),
+                this.myInfoSection.html("rol: " + (this.oCurrentData.description ? this.oCurrentData.description : "")),
+                this.myMemberYear.html("lid sinds: " + (this.oCurrentData.member_since ? this.oCurrentData.member_since : "")),
+                this.myMemberFact.html("feitje: " + (this.oCurrentData.fact ? this.oCurrentData.fact : "")),
+                this.myAvatar.html("<img src='" + (this.oCurrentData.avatar ? this.oCurrentData.avatar : "") + "'>"),
                 (this.bIsShowing = !0),
                 (this.bIsInTransition = !1),
                 console.log("showNewPersonInfo");

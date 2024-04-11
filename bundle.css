@@ -393,6 +393,7 @@ h2 {
   background-position: center;
   position:absolute;
   right:0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .team{
@@ -997,6 +998,7 @@ footer {
 .visie_container img{
   width:70rem;
   margin-left:-60rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .purple_content{
@@ -1103,21 +1105,38 @@ footer {
     background-color: #c71585;
 }
 .cmd-info-panel {
-    position: absolute;
-    left: 4vw;
-    top: 0;
-    height: 100%;
-    width: calc(100% - 3vw);
-    display: flex;
-    align-items: flex-start;
-
+  left: 5%;
+  top: 0;
+  width: 30%;
+  z-index: 1;
+  position: absolute;
 }
 
 .cmd-info-panel__text {
     color: black;
-    font-size: 3vw;
-    line-height: 0.9;
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
 }
+.js-teacher-name{
+  font-size:4rem;
+}
+.js-teacher-avatar{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.js-teacher-avatar img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
 
 .cmd-info-panel__text-name {
     font-weight: 800;
@@ -1131,7 +1150,7 @@ footer {
 .cmd-info-panel.--show .cmd-info-panel__text-info,
 .cmd-info-panel.--show .cmd-info-panel__text-name {
       background: white;
-    padding:2rem;
+    padding:1rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-transform: translateX(0);
     transform: translateX(0);
