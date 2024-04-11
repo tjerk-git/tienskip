@@ -219,11 +219,11 @@ var SiteManager = {
 
     };
 
-filterButton.click(function () {
-    const filteredData = SiteManager.filterArray(PeopleManager.myPeopleData);
-    PeopleManager.clearAllPeople();
-    PeopleManager.myPeopleData = filteredData;
-    // Trigger people loading as if it were fresh data
-    PeopleManager.onPeopleDataLoaded({ data: filteredData });
-});
+// filterButton.click(function () {
+//     const filteredData = SiteManager.filterArray(PeopleManager.myPeopleData);
+//     PeopleManager.clearAllPeople();
+//     PeopleManager.myPeopleData = filteredData;
+//     // Trigger people loading as if it were fresh data
+//     PeopleManager.onPeopleDataLoaded({ data: filteredData });
+// });
 //# sourceMappingURL=cmd-min.js.map
